@@ -17,17 +17,23 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #fdfdfd;
+    color: #101010;
+    font-family: "Yellow Ginger", "Montserrat", sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .default-container {
+      @apply flex lg:px-28 md:px-8 px-4 lg:py-14 md:py-4 py-2;
   }
 }
