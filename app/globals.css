@@ -15,6 +15,11 @@ body {
     color: #101010;
     font-family: "Yellow Ginger", "Montserrat", sans-serif;
 }
+
+header {
+    z-index: 800;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

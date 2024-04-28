@@ -5,10 +5,26 @@ import { usePathname } from "next/navigation";
 import DefaultButton from "./DefaultButton";
 import { faBars, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { Tabs } from "@/prefs/Consts";
+import { useState, useEffect } from "react";
 
 export default () => {
+
+    const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+    const handleScroll = () => {
+        const position = window.scrollY;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrollPosition]);
+
     const pathName= usePathname();
-    return <header className="default-container bg-primary flex-row h-[10vh] lg:justify-between justify-start items-center">
+    return <header className={`default-container fixed top-0 w-full flex-row h-[10vh] lg:justify-between justify-start items-center transition-all duration-500 ${scrollPosition > 100 ? " bg-primary shadow-background-secondary/15 shadow-lg" : "bg-transparent"}`}>
         <div className="lg:hidden flex">
             <DefaultButton 
                 title="" onClick={ () => {} }
