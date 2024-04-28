@@ -9,6 +9,8 @@ type ButtonProps = {
     iconHeight?: number;
     iconWidth?: number;
     iconSize?: SizeProp;
+    iconColor?: String;
+    iconHoverColor?: String;
 }
 
 export default (props: ButtonProps) => {
@@ -16,26 +18,33 @@ export default (props: ButtonProps) => {
     switch(props.variant) {
         default:
         case "primary":
-            stylingClasses= "";
+            stylingClasses= "px-4 py-2 rounded-full bg-pink text-background font-secondary border-2 border-pink hover:bg-transparent hover:text-pink transition-all font-bold duration-500 ease-in-out";
             break;
-        case "primaryIcon":
-            stylingClasses= "";
-            break;
+
         case "secondary":
-            stylingClasses= "";
+            stylingClasses= "px-4 py-2 rounded-full bg-background text-pink font-secondary border-2 border-background hover:bg-transparent bg-background text-primary hover:text-background transition-all font-bold duration-500 ease-in-out";
             break;
-        case "secondaryIcon":
-            stylingClasses= "";
-            break;
+
         case "shadow":
-            stylingClasses= "";
+            stylingClasses= "underline text-background px-4 py-2 font-secondary font-bold";
             break;
+
+        case "primaryIcon":
+            break;
+
+        case "secondaryIcon":
+            break;
+
         case "shadowIcon":
-            stylingClasses= "";
+            stylingClasses= `bg-transparent ${props.iconColor} `;
             break;
     }
-    return <button className={(stylingClasses ?? "") + "cursor-pointer"} onClick={props.onClick}>
-        {props.title}
-        {!(props.icon) && <FontAwesomeIcon icon={props.icon!} color={iconColor!} width={props.iconWidth ?? 64} height={props.iconHeight ?? 64} size={props.iconSize!} />}
-    </button>
+    return (
+        <button className={stylingClasses! + `cursor-pointer whitespace-nowrap flex flex-row gap-2 items-center my-auto hover:${props.iconHoverColor}`} onClick={props.onClick}>
+            {props.title}
+            {(props.icon !== undefined) && <FontAwesomeIcon
+                icon={props.icon!} color={iconColor!} width={props.iconWidth ?? 64} height={props.iconHeight ?? 64} size={props.iconSize!} />}
+        </button>
+    );
+
 }
