@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -21,19 +15,16 @@ body {
     color: #101010;
     font-family: "Yellow Ginger", "Montserrat", sans-serif;
 }
-
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 
   .default-container {
-      @apply flex lg:px-28 md:px-8 px-4 lg:py-14 md:py-4 py-2;
+      @apply flex lg:px-28 md:px-8 px-4;
+  }
+
+  .bg-transparent {
+      background-color: transparent;
   }
 }
