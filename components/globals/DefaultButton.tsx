@@ -30,6 +30,7 @@ export default (props: ButtonProps) => {
             break;
 
         case "primaryIcon":
+            stylingClasses= "p-2 bg-primary aspect-square rounded-xl ";
             break;
 
         case "secondaryIcon":
@@ -42,7 +43,7 @@ export default (props: ButtonProps) => {
     return (
         <button className={stylingClasses! + `cursor-pointer whitespace-nowrap flex flex-row gap-2 items-center my-auto hover:${props.iconHoverColor}`} onClick={props.onClick}>
             {props.title}
-            {(props.icon !== undefined) && <FontAwesomeIcon
+            {(props.icon !== undefined) && <FontAwesomeIcon className={`${props.iconColor}`}
                 icon={props.icon!} color={iconColor!} width={props.iconWidth ?? 64} height={props.iconHeight ?? 64} size={props.iconSize!} />}
         </button>
     );
