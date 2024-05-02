@@ -18,7 +18,7 @@ export default (props: ButtonProps) => {
     switch(props.variant) {
         default:
         case "primary":
-            stylingClasses= "px-4 py-2 rounded-full bg-pink text-background font-secondary border-2 border-pink hover:bg-transparent hover:text-pink transition-all font-bold duration-500 ease-in-out";
+            stylingClasses= "px-4 py-2 rounded-full bg-primary text-background font-secondary border-2 border-primary hover:bg-transparent hover:text-primary transition-all font-bold duration-500 ease-in-out";
             break;
 
         case "secondary":
