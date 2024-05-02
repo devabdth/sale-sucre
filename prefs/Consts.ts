@@ -129,3 +129,53 @@ export const Testmonials = [
   },
 ];
 
+export const Products= [
+    {
+        title: "Duo (Chocolat/Fruits)",
+        desc: "Half Chocolate cake with chocolate cream, nuts, and caramelized hazelnuts, Half Sponge cake filled with fresh cream & peach compote topped with fresh fruits",
+        image: "/prod-one.webp",
+        arrowMode: "top",
+        price: 460,
+        category: "Torte"
+    },
+    {
+        title: "Chocolate Hazelnut Fudge",
+        desc: "Fudge cake filled with fresh cream with caramel, chocolate hazelnut spread and decorated with biscuits",
+        image: "/prod-two.webp",
+        arrowMode: "bottom",
+        price: 510,
+        category: "Torte"
+    },
+    {
+        title: "Charlotte Fruits",
+        desc: "Sponge cake filled with fresh cream and pureed fruits and topped with fresh fruits (22cm)",
+        image: "/prod-three.webp",
+        arrowMode: "top",
+        price: 450,
+        category: "Torte"
+    },
+    {
+        title: "Charlotte aux Fraises",
+        desc: "Sponge cake filled with fresh cream and strawberries and topped with fresh strawberries",
+        image: "/prod-four.webp",
+        arrowMode: "bottom",
+        price: 450,
+        category: "Torte"
+    },
+    {
+        title: "Duo (Praliné Surprise \ Strawberry)",
+        desc: "Half fudge cake filled with hazelnut cream & hazelnuts topped with chocolate & hazelnuts.Half Sponge cake filled with fresh cream & strawberry topped with fresh strawberry",
+        image: "/prod-five.webp",
+        arrowMode: "top",
+        price: 460,
+        category: "Torte"
+    },
+    {
+        title: "Praliné Surprise",
+        desc: "Fudge cake filled with hazelnut cream & hazelnuts topped with chocolate & hazelnuts",
+        image: "/prod-six.webp",
+        arrowMode: "bottom",
+        price: 510,
+        category: "Torte"
+    },
+];
