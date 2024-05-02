@@ -105,3 +105,27 @@ export const Services= [
 ];
 
 
+export const Testmonials = [
+  {
+    message:
+      "Sale Sucre’s pastries are a delightful journey in every bite. Their attention to detail and authentic flavors always bring a piece of Cairo’s sweet heritage to my table.",
+    person: "Ahmed Mahmoud",
+    position: "Engineer",
+    image: "/person-one.png",
+  },
+  {
+    message:
+      "I’ve celebrated every family milestone with treats from Sale Sucre. Their exceptional quality and service have made every occasion memorable and delicious.",
+    person: "Mahmoud Qandil",
+    position: "Doctor",
+    image: "/person-two.png",
+  },
+  {
+    message:
+      "The variety and creativity of Sale Sucre’s pastries are unmatched. Whether it’s a classic dessert or a modern twist, they never fail to impress me and my guests.",
+    person: "Hisham Mahmoud",
+    position: "Founder & CEO",
+    image: "/person-three.png",
+  },
+];
+
