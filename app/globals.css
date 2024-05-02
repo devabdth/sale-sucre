@@ -2,6 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Yellow Ginger";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Yello Ginger"), url("../fonts/Yellow Ginger/Yellow Ginger.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Montserrat"), url("../fonts/Montserrat/static/Montserrat-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Montserrat"), url("../fonts/Montserrat/static/Montserrat-Light.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat"), url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat"), url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat"), url("../fonts/Montserrat/static/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Montserrat"), url("../fonts/Montserrat/static/Montserrat-Black.ttf") format("truetype");
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
